@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="stylesheet" href="./src/styles/styles.scss" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            referrerpolicy="no-referrer"
+        />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="./src/styles/styles.scss">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
-</head>
+    <body>
+        <div id="app">
+            <div class="form">
+                <div class="input-container">
+                    <input
+                        id="input"
+                        type="text"
+                        placeholder="Search for food like Chicken!!!"
+                        autocomplete="off"
+                    />
+                    <label for="input" class="label">Search</label>
+                </div>
 
-<body>
-  <div id="app">
-    <div class="form">
-      <div class="input-container">
-        <input id='input' type="text" placeholder="Search " autocomplete="off">
-        <label for="input" class="label">Search</label>
-      </div>
-      
-      <i class="fas fa-search"></i>
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="dropdown-container"></div>
+            <div class="full-cont"></div>
 
-      
-    </div>
-    <div class="dropdown-container"></div>
-    <div class="full-cont"></div>
-
-    <div class="error"></div>
-    <div class="full-image"></div>
-    
-  </div>
-  <script type="module" src="./src/script/script.js"></script>
-</body>
-
+            <div class="error"></div>
+            <div class="full-image"></div>
+        </div>
+        <script type="module" src="./src/script/script.js"></script>
+    </body>
 </html>
